@@ -1,0 +1,2645 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "StudentHub Threat Model",
+    "owner": "Destint sylvester",
+    "description": "STRIDE-based threat model for a hypothetical student web portal",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": [
+          {
+            "position": {
+              "x": 82.5,
+              "y": -555
+            },
+            "size": {
+              "width": 480,
+              "height": 70
+            },
+            "attrs": {
+              "label": {
+                "text": "                        Internet / Public Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "3177d94c-653a-4858-8533-68abb1ec6f9d",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "                        Internet / Public Zone",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "548b3495-d12f-4351-83f0-2da3ed95be0d",
+                "32862902-a29c-47ed-8b2a-7ef0b85d95a9"
+              ],
+              "containedElements": [
+                "c2ebfb42-f663-44de-86d6-c64545890668",
+                "2da255c3-98d2-4ec5-b9ba-a664643df67c"
+              ]
+            }
+          },
+          {
+            "angle": 270,
+            "position": {
+              "x": -400,
+              "y": -44.19872981077805
+            },
+            "size": {
+              "width": 400,
+              "height": 150
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "62355034-4682-4f47-8a95-fd12517bb391",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "angle": 345,
+            "position": {
+              "x": 174.99576595222067,
+              "y": -60.511112605663726
+            },
+            "size": {
+              "width": 610,
+              "height": 170
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "03e86468-1d58-4fda-bfa2-c81bd80479d8",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "position": {
+              "x": 90,
+              "y": -550
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Admin"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "155c0238-a5cf-4aaf-8337-76fc42f0b2fe"
+                },
+                {
+                  "group": "right",
+                  "id": "b411f69c-5970-495a-90c0-2cad46cce929"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1c265087-3f06-4e9e-a9da-e7eaed01d904"
+                },
+                {
+                  "group": "left",
+                  "id": "fa4a2806-a9d1-4760-8866-5cf463255afa"
+                }
+              ]
+            },
+            "id": "c2ebfb42-f663-44de-86d6-c64545890668",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Admin",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 450,
+              "y": -550
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Student"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "155c0238-a5cf-4aaf-8337-76fc42f0b2fe"
+                },
+                {
+                  "group": "right",
+                  "id": "b411f69c-5970-495a-90c0-2cad46cce929"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1c265087-3f06-4e9e-a9da-e7eaed01d904"
+                },
+                {
+                  "group": "left",
+                  "id": "fa4a2806-a9d1-4760-8866-5cf463255afa"
+                }
+              ]
+            },
+            "id": "2da255c3-98d2-4ec5-b9ba-a664643df67c",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Student",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 786.25,
+              "y": -555
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Email Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 3,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "155c0238-a5cf-4aaf-8337-76fc42f0b2fe"
+                },
+                {
+                  "group": "right",
+                  "id": "b411f69c-5970-495a-90c0-2cad46cce929"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1c265087-3f06-4e9e-a9da-e7eaed01d904"
+                },
+                {
+                  "group": "left",
+                  "id": "fa4a2806-a9d1-4760-8866-5cf463255afa"
+                }
+              ]
+            },
+            "id": "9c40a7c4-adef-4a7d-b0df-80b79352c68f",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Email Service",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "e8330995-3253-4afa-a8d6-94ed20942a63",
+                  "title": "Email injection or phishing via outbound mail",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "If user-controlled strings become email headers or HTML bodies without sanitization, attackers can inject SMTP headers or malicious links sent as official StudentHub mail.",
+                  "mitigation": "Use a transactional email API with template escaping; fixed From domain with SPF DKIM DMARC; strip CRLF from inputs; rate limit outbound mail per user.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 562.5,
+              "y": -80
+            },
+            "size": {
+              "width": 110,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Web Application"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 4,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+                },
+                {
+                  "group": "right",
+                  "id": "ffc82f35-9301-4391-95a2-43b626e66798"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a995fe8b-7157-4e1b-bbc4-82051d927b92"
+                },
+                {
+                  "group": "left",
+                  "id": "bbb05e4b-4b42-417b-bded-66bbbefee158"
+                }
+              ]
+            },
+            "id": "a0a26ce5-f7c2-4798-bb18-13df7f753509",
+            "data": {
+              "type": "tm.Process",
+              "name": "Web Application",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 252.5,
+              "y": -20
+            },
+            "size": {
+              "width": 140,
+              "height": 140
+            },
+            "attrs": {
+              "text": {
+                "text": "Authentication Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 5,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+                },
+                {
+                  "group": "right",
+                  "id": "ffc82f35-9301-4391-95a2-43b626e66798"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a995fe8b-7157-4e1b-bbc4-82051d927b92"
+                },
+                {
+                  "group": "left",
+                  "id": "bbb05e4b-4b42-417b-bded-66bbbefee158"
+                }
+              ]
+            },
+            "id": "109b9614-e71f-4ef3-8457-d5f620c15811",
+            "data": {
+              "type": "tm.Process",
+              "name": "Authentication Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -210,
+              "y": -390
+            },
+            "size": {
+              "width": 90,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Admin Panel"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 6,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+                },
+                {
+                  "group": "right",
+                  "id": "ffc82f35-9301-4391-95a2-43b626e66798"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a995fe8b-7157-4e1b-bbc4-82051d927b92"
+                },
+                {
+                  "group": "left",
+                  "id": "bbb05e4b-4b42-417b-bded-66bbbefee158"
+                }
+              ]
+            },
+            "id": "5936c30e-397c-4511-a9a1-15b66f9d2448",
+            "data": {
+              "type": "tm.Process",
+              "name": "Admin Panel",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -260,
+              "y": 60
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 7,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7d03e649-6046-4d8a-99ec-0c1b07026415"
+                },
+                {
+                  "group": "right",
+                  "id": "16d662e6-2f99-4914-939e-fe76bab2d32e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1b559ff6-1757-46a0-ba92-0eb04a49e34d"
+                },
+                {
+                  "group": "left",
+                  "id": "9936c5dd-e70f-4ab4-b412-87e90ec01e1c"
+                }
+              ]
+            },
+            "id": "99016047-2307-49f4-a66e-7e752f5f7068",
+            "data": {
+              "type": "tm.Store",
+              "name": "User Database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -260,
+              "y": -80
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Coursework Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 8,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7d03e649-6046-4d8a-99ec-0c1b07026415"
+                },
+                {
+                  "group": "right",
+                  "id": "16d662e6-2f99-4914-939e-fe76bab2d32e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1b559ff6-1757-46a0-ba92-0eb04a49e34d"
+                },
+                {
+                  "group": "left",
+                  "id": "9936c5dd-e70f-4ab4-b412-87e90ec01e1c"
+                }
+              ]
+            },
+            "id": "3d626607-2fcd-4d26-a680-962c2ab7b8b3",
+            "data": {
+              "type": "tm.Store",
+              "name": "Coursework Database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 910,
+              "y": -40
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Session Store"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 9,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7d03e649-6046-4d8a-99ec-0c1b07026415"
+                },
+                {
+                  "group": "right",
+                  "id": "16d662e6-2f99-4914-939e-fe76bab2d32e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1b559ff6-1757-46a0-ba92-0eb04a49e34d"
+                },
+                {
+                  "group": "left",
+                  "id": "9936c5dd-e70f-4ab4-b412-87e90ec01e1c"
+                }
+              ]
+            },
+            "id": "b7b063de-e937-48cb-a105-9c54c01a7764",
+            "data": {
+              "type": "tm.Store",
+              "name": "Session Store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -530,
+              "y": -250
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Audit Log Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 10,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7d03e649-6046-4d8a-99ec-0c1b07026415"
+                },
+                {
+                  "group": "right",
+                  "id": "16d662e6-2f99-4914-939e-fe76bab2d32e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1b559ff6-1757-46a0-ba92-0eb04a49e34d"
+                },
+                {
+                  "group": "left",
+                  "id": "9936c5dd-e70f-4ab4-b412-87e90ec01e1c"
+                }
+              ]
+            },
+            "id": "f3b6ad3c-6df5-4de8-98ca-14a593693a67",
+            "data": {
+              "type": "tm.Store",
+              "name": "Audit Log Database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4f1a4390-e8a7-4a85-95dd-26b49cdb9a38",
+                  "title": "credential stuffing/ brute force",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Usernames and passwords may be exposed to network observers if encryption is misconfigured, or to client-side malware via phishing and fake login pages that mimic StudentHub.",
+                  "mitigation": "Strict HTTPS-only with HSTS; phishing-resistant MFA where possible; clear branding and canonical hostnames; security awareness; detect and block lookalike domains.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Login Credentials"
+            ],
+            "id": "817e8ce2-0298-4417-ab9c-93b807eb4a9d",
+            "source": {
+              "x": 505,
+              "y": -490
+            },
+            "target": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509",
+              "port": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": -370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Management Commands",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Management Commands"
+            ],
+            "id": "3c77d0be-7055-4943-aeb6-2ed0b8db05f6",
+            "source": {
+              "x": 142,
+              "y": -490
+            },
+            "target": {
+              "cell": "5936c30e-397c-4511-a9a1-15b66f9d2448",
+              "port": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+            },
+            "vertices": [
+              {
+                "x": -10,
+                "y": -430
+              },
+              {
+                "x": -10,
+                "y": -420
+              },
+              {
+                "x": -30,
+                "y": -410
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Auth Response (Token)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3a600719-3275-460b-95bb-a7f9ec94b274",
+                  "title": "Token forgery if signing keys are compromised",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "If token signing keys are static, broadly shared, or stored in source control, attackers who obtain the key can mint valid tokens.",
+                  "mitigation": "Store keys in a managed secret vault; automate key rotation; separate signing keys per environment; monitor for anomalous token issuance",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Auth Response (Token)"
+            ],
+            "id": "da5af5e4-075a-4654-adb2-dc21fe82036e",
+            "source": {
+              "cell": "109b9614-e71f-4ef3-8457-d5f620c15811"
+            },
+            "target": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509",
+              "port": "a995fe8b-7157-4e1b-bbc4-82051d927b92"
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Auth Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3f8e44d6-8b91-4e88-885a-c2cad7834992",
+                  "title": "Metadata leakage in auth service calls",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Auth requests may carry usernames, device fingerprints, or tenant identifiers. Logs or traces could expose this data to unauthorized operators.",
+                  "mitigation": "Minimize PII in logs; field-level redaction; access-controlled observability; retention limits aligned with GDPR-style expectations for student data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "99322dff-5eeb-47b1-9796-b794cb5434ac",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Auth Request"
+            ],
+            "id": "c3e2ac9c-44c1-42a5-ba44-16a1559adc45",
+            "source": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509"
+            },
+            "target": {
+              "cell": "109b9614-e71f-4ef3-8457-d5f620c15811",
+              "port": "ffc82f35-9301-4391-95a2-43b626e66798"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 20
+              },
+              {
+                "x": 470,
+                "y": 20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Session Token / HTML Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c79865bf-8c08-4408-808e-072d6011dd9a",
+                  "title": "Reflected or stored XSS in HTML responses",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "The web application returns HTML that may embed untrusted data (errors, names, search results). If output is not encoded, an attacker can inject script executed in the student browser, stealing session tokens or performing actions as the victim.",
+                  "mitigation": "Use a template engine with contextual output encoding; adopt a strict Content-Security-Policy; sanitize and validate all dynamic fields; avoid concatenating user input into HTML strings.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "a9aace3a-ece4-4008-bca3-c1f35f0c9f16",
+                  "title": "Sensitive data leakage via HTML or headers",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Responses may leak internal identifiers, stack traces, or session identifiers in URLs or error pages, helping attackers refine follow-on attacks.",
+                  "mitigation": "Centralized safe error pages; never expose stack traces to users; use HttpOnly Secure SameSite cookies for session tokens; redact internal details from client-visible output.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "3177d94c-653a-4858-8533-68abb1ec6f9d"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Session Token / HTML Response"
+            ],
+            "id": "548b3495-d12f-4351-83f0-2da3ed95be0d",
+            "source": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509",
+              "port": "ffc82f35-9301-4391-95a2-43b626e66798"
+            },
+            "target": {
+              "cell": "2da255c3-98d2-4ec5-b9ba-a664643df67c",
+              "port": "b411f69c-5970-495a-90c0-2cad46cce929"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": -350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Audit Query / Audit Log Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c7ce1fe1-e216-4b27-bdc8-a9eb55aa9f9d",
+                  "title": "Audit log tampering or selective deletion",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "If audit logs are writable by the same compromised principal that performed the abuse, attackers can erase evidence of admin misuse.",
+                  "mitigation": "Append-only log storage; separate credentials for log writers vs readers; ship logs to immutable WORM or SIEM; integrity hashing of log chains.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "c7a36698-8501-4d3e-b8e9-d95a1ec63ffc",
+                  "title": "Session store breach exposes all active users",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Central session storage is a concentration risk. A single breach could leak thousands of active sessions at once.",
+                  "mitigation": "Encrypt session payloads at rest; network isolation; least-privilege access; intrusion detection on session store; short session TTL.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Audit Query / Audit Log Data"
+            ],
+            "id": "8bf00b24-eae0-478b-9855-4aafa5005a81",
+            "source": {
+              "cell": "5936c30e-397c-4511-a9a1-15b66f9d2448"
+            },
+            "target": {
+              "cell": "f3b6ad3c-6df5-4de8-98ca-14a593693a67",
+              "port": "16d662e6-2f99-4914-939e-fe76bab2d32e"
+            },
+            "vertices": [
+              {
+                "x": -300,
+                "y": -270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Admin Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Admin Credentials"
+            ],
+            "id": "d5e44b96-16cb-4167-8abe-eb5678c7767d",
+            "source": {
+              "x": 143,
+              "y": -490
+            },
+            "target": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509",
+              "port": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": -430
+              },
+              {
+                "x": 320,
+                "y": -280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Coursework File Upload",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "db524378-7354-4373-ae8a-94fd88819fae",
+                  "title": "Malicious file upload (malware polyglot)",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Students upload files that may contain malware or double extensions. If the server stores and later serves files unsafely, other users or admins could be compromised when opening submissions.",
+                  "mitigation": "Virus scanning; file type sniffing; strip macros; store outside web root; serve with `Content-Disposition: attachment`; randomize filenames; sandbox preview generation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "bd30385e-560a-43ab-b610-229b3dde2ad6",
+                  "title": "Upload denial-of-service",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Attackers upload extremely large or numerous files to exhaust disk, CPU, or connection limits, blocking legitimate submissions before deadlines.",
+                  "mitigation": "Per-user quotas, maximum file size, rate limits, asynchronous processing with backpressure, storage alerts, and autoscaling caps.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "3177d94c-653a-4858-8533-68abb1ec6f9d"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Coursework File Upload"
+            ],
+            "id": "32862902-a29c-47ed-8b2a-7ef0b85d95a9",
+            "source": {
+              "cell": "2da255c3-98d2-4ec5-b9ba-a664643df67c",
+              "port": "fa4a2806-a9d1-4760-8866-5cf463255afa"
+            },
+            "target": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509",
+              "port": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": -430
+              },
+              {
+                "x": 540,
+                "y": -210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read/Write Requests",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "222e2ea8-921a-4596-bb6d-032b72b76a83",
+                  "title": "Unauthorized modification of student submissions",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Admins can legitimately manage coursework, but a hijacked admin session could alter grades-linked artifacts or delete evidence of misconduct.",
+                  "mitigation": "Immutable submission versioning; separate read vs write roles; time-limited admin edit windows; student notification on post-deadline admin changes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "2544285c-b50b-4597-8c36-5e4ca2f7e282",
+                  "title": "Academic integrity violations via data access",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Admins viewing live submissions before deadlines could leak answers to other students if access is not time-gated.",
+                  "mitigation": "Blind grading mode until deadline; access logs per file; policy-based access windows tied to assessment rules.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Read/Write Requests"
+            ],
+            "id": "125daa77-c50b-432d-bccf-38ad10757b7c",
+            "source": {
+              "cell": "5936c30e-397c-4511-a9a1-15b66f9d2448"
+            },
+            "target": {
+              "cell": "3d626607-2fcd-4d26-a680-962c2ab7b8b3",
+              "port": "7d03e649-6046-4d8a-99ec-0c1b07026415"
+            },
+            "vertices": [
+              {
+                "x": 100,
+                "y": -370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read/Write Coursework Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "d99b8743-ed8c-4eba-ad98-34d7da00b259",
+                  "title": "SQL injection on coursework queries",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Dynamic SQL built from search filters, filenames, or user IDs can allow attackers to read or modify arbitrary rows in the coursework store.",
+                  "mitigation": "Parameterized queries; strict ORM usage; principle of least privilege on DB accounts; WAF rules for SQLi patterns; code review for all DB access paths.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "db9fabbe-3555-4ebd-850d-d7a554e6117c",
+                  "title": "Unauthorized access to other students’ submissions",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Missing object-level authorization checks could let one student list or download another student’s uploaded files by guessing identifiers.",
+                  "mitigation": "Enforce ownership checks on every read/write; use non-guessable object IDs; signed download URLs with short TTL; audit all access to submission blobs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Read/Write Coursework Data"
+            ],
+            "id": "ed21b8cd-bb59-4148-b62e-dbd083f03172",
+            "source": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509"
+            },
+            "target": {
+              "cell": "3d626607-2fcd-4d26-a680-962c2ab7b8b3",
+              "port": "1b559ff6-1757-46a0-ba92-0eb04a49e34d"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": -120
+              },
+              {
+                "x": 180,
+                "y": -100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Create/Validate Session",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "8df45ebe-19eb-4058-a2fb-e8097547896e",
+                  "title": "Session store breach exposes all active users",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Central session storage is a concentration risk. A single breach could leak thousands of active sessions at once.",
+                  "mitigation": "Encrypt session payloads at rest; network isolation; least-privilege access; intrusion detection on session store; short session TTL.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Create/Validate Session"
+            ],
+            "id": "8db8ca5f-0acf-4610-bd5b-bc2fb9fc43b7",
+            "source": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509"
+            },
+            "target": {
+              "cell": "b7b063de-e937-48cb-a105-9c54c01a7764",
+              "port": "7d03e649-6046-4d8a-99ec-0c1b07026415"
+            },
+            "vertices": [
+              {
+                "x": 870,
+                "y": -100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials Query",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e0075bd6-712b-4831-bb65-350e8d1b5252",
+                  "title": "SQL injection in credential lookup",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "If the auth service builds SQL from unsanitized input, attackers can alter queries to bypass password checks or dump the user table",
+                  "mitigation": "Parameterized queries only; least-privilege DB role for auth; input validation; static and dynamic analysis in CI; regular penetration testing on auth endpoints.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "2cd54441-0e78-43e6-b770-9d4ae045e4c0",
+                  "title": "Mass user record exfiltration",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "A compromised auth query path or over-privileged DB account could export all student credentials or profile attributes in one operation.",
+                  "mitigation": "Column-level access where possible; rate limits on bulk reads; anomaly detection on large result sets; encryption at rest for sensitive columns.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Credentials Query"
+            ],
+            "id": "895d5126-9604-4c0e-9ca7-7f15d6091b58",
+            "source": {
+              "cell": "109b9614-e71f-4ef3-8457-d5f620c15811"
+            },
+            "target": {
+              "cell": "99016047-2307-49f4-a66e-7e752f5f7068",
+              "port": "7d03e649-6046-4d8a-99ec-0c1b07026415"
+            },
+            "vertices": [
+              {
+                "x": 170,
+                "y": 70
+              },
+              {
+                "x": 70,
+                "y": 50
+              },
+              {
+                "x": 0,
+                "y": 30
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Management Queries",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1be76145-b33e-4da8-91d3-64985d74edce",
+                  "title": "Mass account tampering via admin queries",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "A compromised admin panel session could bulk-update roles, reset passwords, or mark accounts suspended without business approval.",
+                  "mitigation": "Transaction limits, approval workflows for bulk changes, soft-delete with restore window, and database triggers logging critical column changes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "ba0749fe-5f65-4a94-b6aa-a518d8be602b",
+                  "title": "PII exfiltration via admin reporting queries",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Admin list/search features may export entire user tables if export endpoints lack pagination and authorization checks.",
+                  "mitigation": "Export quotas; watermark exports; role-scoped column visibility; DLP monitoring on download endpoints.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "User Management Queries"
+            ],
+            "id": "c92b7e34-29e5-4f42-bde1-15d128d502ef",
+            "source": {
+              "cell": "5936c30e-397c-4511-a9a1-15b66f9d2448"
+            },
+            "target": {
+              "cell": "99016047-2307-49f4-a66e-7e752f5f7068",
+              "port": "9936c5dd-e70f-4ab4-b412-87e90ec01e1c"
+            },
+            "vertices": [
+              {
+                "x": -340,
+                "y": -100
+              },
+              {
+                "x": -340,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Session Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5b544fcd-1904-4837-a426-7a52f31ee30e",
+                  "title": "Session data integrity not verified",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "If session payloads are not signed or integrity-checked, a compromised web tier could forge session records to impersonate users.",
+                  "mitigation": "Signed opaque tokens or server-side-only session references; HMAC or authenticated encryption on serialized session blobs; mutual TLS between app and session service.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Session Data"
+            ],
+            "id": "f9303502-cd64-49a1-86ed-5bf8ba12034a",
+            "source": {
+              "cell": "b7b063de-e937-48cb-a105-9c54c01a7764",
+              "port": "1b559ff6-1757-46a0-ba92-0eb04a49e34d"
+            },
+            "target": {
+              "cell": "a0a26ce5-f7c2-4798-bb18-13df7f753509",
+              "port": "a995fe8b-7157-4e1b-bbc4-82051d927b92"
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 80
+              },
+              {
+                "x": 800,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": -560,
+              "y": 100
+            },
+            "size": {
+              "width": 200,
+              "height": 180
+            },
+            "attrs": {
+              "text": {
+                "text": "Coursework Upload Handler"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "857d544e-bb03-4e17-a907-b45596c9b3ec"
+                },
+                {
+                  "group": "right",
+                  "id": "ffc82f35-9301-4391-95a2-43b626e66798"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a995fe8b-7157-4e1b-bbc4-82051d927b92"
+                },
+                {
+                  "group": "left",
+                  "id": "bbb05e4b-4b42-417b-bded-66bbbefee158"
+                }
+              ]
+            },
+            "id": "ece38771-0514-425e-94d4-eab0b50d64eb",
+            "data": {
+              "type": "tm.Process",
+              "name": "Coursework Upload Handler",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Record",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "387256d5-647b-4668-8765-121500e118d5",
+                  "title": "Unauthorized read of user records",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Data leaving the user store toward the auth service could be intercepted or logged excessively, exposing password hashes, roles, and flags such as `is_admin`",
+                  "mitigation": "Encrypt data in transit between services; restrict DB credentials to SELECT on required columns; avoid logging full user rows; mask roles in non-admin logs.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "1c12bcf6-ecb7-4d2d-a1f8-28d447c489d3",
+                  "title": "Stale or tampered user record used for authorization",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "If cached user records are not invalidated after role changes, the auth service may grant access based on outdated `is_admin` or `is_seller` flags. |\n",
+                  "mitigation": "Short TTL on cached identity; explicit invalidation on role change; version column or ETag on user rows; re-fetch on privilege-sensitive operations",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "User Record"
+            ],
+            "id": "c0e5d22f-11e3-4f2c-89f8-c71c1e9f1fb1",
+            "source": {
+              "cell": "99016047-2307-49f4-a66e-7e752f5f7068"
+            },
+            "target": {
+              "cell": "109b9614-e71f-4ef3-8457-d5f620c15811",
+              "port": "a995fe8b-7157-4e1b-bbc4-82051d927b92"
+            },
+            "vertices": [
+              {
+                "x": -20,
+                "y": 120
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 31
+  }
+}
